@@ -1,0 +1,6 @@
+2015-05-21 15:36:24.305 weatherapp[5759:1380590] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/carlosrojas/Library/Developer/CoreSimulator/Devices/8982BBF8-5099-4C26-AF21-E05A9337160E/data/Containers/Data/Application/B53B3FE2-ADDE-4CD6-87B2-E2D9B705547F/Library/Cookies/Cookies.binarycookies
+2015-05-21 15:36:24.454 weatherapp[5759:1380590] Apache Cordova native platform version 3.8.0 is starting.
+2015-05-21 15:36:24.455 weatherapp[5759:1380590] Multi-tasking -> Device: YES, App: YES
+2015-05-21 15:36:24.460 weatherapp[5759:1380590] Unlimited access to network resources
+2015-05-21 15:36:25.248 weatherapp[5759:1380590] Resetting plugins due to page load.
+2015-05-21 15:36:25.603 weatherapp[5759:1380590] Finished load of: file:///Users/carlosrojas/Library/Developer/CoreSimulator/Devices/8982BBF8-5099-4C26-AF21-E05A9337160E/data/Containers/Bundle/Application/D00B3704-17A0-41F8-84F9-8EC9FCB8FBDB/weatherapp.app/www/index.html
