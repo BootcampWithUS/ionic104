@@ -12,6 +12,11 @@ angular.module('App', ['ionic'])
       controller: 'SettingsController',
       templateUrl: 'views/settings/settings.html'
     })
+    .state('weather', {
+      url: '/weather/:city/:lat/:lng',
+      controller: 'WeatherController',
+      templateUrl: 'views/weather/weather.html'
+    })
 
   ;
 

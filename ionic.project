@@ -8,5 +8,11 @@
   "watchPatterns": [
     "www/**/*",
     "!www/lib/**/*"
+  ],
+  "proxies": [
+    {
+      "path": "/api/forecast",
+      "proxyUrl": "https://api.forecast.io/forecast/6159c9d84addc44bb4c45b42fdfdcd42/"
+    }
   ]
 }
