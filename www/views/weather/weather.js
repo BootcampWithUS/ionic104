@@ -1,5 +1,5 @@
 angular.module('App')
-.controller('WeatherController', function ($scope, $http, $stateParams, Settings) {
+.controller('WeatherController', function ($scope, $http, $stateParams,$ionicActionSheet, Settings) {
   $scope.params = $stateParams;
   $scope.settings = Settings;
 
@@ -16,5 +16,28 @@ angular.module('App')
   };
   $scope.getHeight = function () {
     return parseInt(window.innerHeight - barHeight) + 'px';
+  };
+
+  $scope.showOptions = function () {
+    var sheet = $ionicActionSheet.show({
+      buttons: [
+        {text: 'Volver favorito'},
+        {text: 'Selecciona como primario'},
+        {text: 'Tabla Sol Ocaso'}
+      ],
+      cancelText: 'Cancel',
+      buttonClicked: function (index) {
+        if (index === 0) {
+          Locations.toggle($stateParams);
+        }
+        if (index === 1) {
+          Locations.primary($stateParams);
+        }
+        if (index === 2) {
+          $scope.showModal();
+        }
+        return true;
+      }
+    });
   };
 });
