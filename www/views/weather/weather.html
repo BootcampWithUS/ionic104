@@ -10,7 +10,7 @@
       <div ng-style="{height: getTotalHeight()}">
         <div class="scroll-page center" ng-style="{width: getWidth(), height: getHeight()}">
           <div class="bar bar-dark">
-            <h1 class="title">Condicion Actual</h1>
+            <h1 class="title">Current Conditions</h1>
           </div>
           <div class="has-header">
             <h2 class="primary">{{forecast.currently.temperature | number:0}}&deg;</h2>
@@ -22,7 +22,7 @@
         </div>
         <div class="scroll-page" ng-style="{width: getWidth(), height: getHeight()}">
           <div class="bar bar-dark">
-            <h1 class="title">Pronostico Diario</h1>
+            <h1 class="title">Daily Forecast</h1>
           </div>
           <div class="has-header">
             <p class="padding">{{forecast.daily.summary}}</p>
@@ -36,13 +36,13 @@
         </div>
         <div class="scroll-page" ng-style="{width: getWidth(), height: getHeight()}">
           <div class="bar bar-dark">
-            <h1 class="title">Datos del Clima</h1>
+            <h1 class="title">Weather Stats</h1>
           </div>
           <div class="list has-header">
-            <div class="item">Sol: {{forecast.daily.data[0].sunriseTime | timezone:forecast.timezone}}</div>
-            <div class="item">Ocaso: {{forecast.daily.data[0].sunsetTime | timezone:forecast.timezone}}</div>
-            <div class="item">Visibilidad: {{forecast.currently.visibility}}</div>
-            <div class="item">Humedad: {{forecast.currently.humidity * 100}}%</div>
+            <div class="item">Sunrise: {{forecast.daily.data[0].sunriseTime | timezone:forecast.timezone}}</div>
+            <div class="item">Sunset: {{forecast.daily.data[0].sunsetTime | timezone:forecast.timezone}}</div>
+            <div class="item">Visibility: {{forecast.currently.visibility}}</div>
+            <div class="item">Humidity: {{forecast.currently.humidity * 100}}%</div>
           </div>
         </div>
       </div>
